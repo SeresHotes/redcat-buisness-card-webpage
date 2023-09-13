@@ -1,0 +1,205 @@
+<html lang="ru" class="scroll-smooth relative">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+  <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+  <title>честный фулфилмент </title>
+
+  <style>
+  </style>
+</head>
+
+<body class="font-sans text-xl">
+  <div>
+    <header>
+      <div class="fixed h-min inset-0 bg-white z-20 px-3 flex justify-between align-middle items-center"">
+      <a href=" #top"> <img class="h-20 object-cover" src="logo.png" /> </a>
+        <div class="h-full md:flex">
+          <ul class="flex gap-3 sm:gap-5">
+            <a href="#about-us">
+              <li class="hover:text-sky-700"> О нас </li>
+            </a>
+            <a href="#prices">
+              <li class="hover:text-sky-700"> Прайс лист </li>
+            </a>
+            <a href="#contact-us">
+              <li class="hover:text-sky-700"> Обратная связь </li>
+            </a>
+            <a href="#contacts">
+              <li class="hover:text-sky-700"> Контакты </li>
+            </a>
+          </ul>
+        </div>
+        <div class="hidden">
+          <div class="p-1 hover:bg-gray-300 rounded-md">
+            <img src="three-dots-vertical-svgrepo-com.svg" class="h-9" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="inset-0 mt-0 mb-32">
+
+      <div class="relative  h-screen w-full  min-h-[500px] lg:min-h-[600px]">
+        <div
+          class=" absolute top-0 right-0 bottom-0 left-0  pointer-events-none bg-gradient-to-tr from-orange-500 to-lime-500 items-end flex">
+          <div class="absolute bottom-13 md:bottom-22 left-0 right-0 mb-20 text-white px-2">
+            <div class="relative xs:w-6-cols md:w-8-cols lg:ml-2-cols lg:w-8-cols z-10">
+              <div class="text-6xl md:text-8xl lg:text-9xl mb-7">
+                RED CAT
+              </div>
+              <div class="text-3xl md:text-6xl lg:text-7xl"> Ваш веселый партнер в управлении логистикой и
+                оптимизации
+                бизнеса </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="px-20 w-full pt-24 justify-center flex">
+        <div class="w-full  max-w-6xl block">
+
+          <div id="about-us" class="lg:flex scroll-my-32">
+            <div class="space-y-6">
+              <p> Фулфилмент – это полный спектр услуг, который помогает
+                владельцам бизнеса упростить операции и сэкономить время:</p>
+
+
+              <ol class="list-decimal">
+                <li><strong>Хранение:</strong> Безопасное и организованное хранение товаров на наших складах.</li>
+                <li><strong>Упаковка:</strong> Подготовка заказов и упаковка согласно вашим требованиям.</li>
+                <li><strong>Доставка:</strong> Быстрая и надежная доставка заказов вашим клиентам.</li>
+                <li><strong>Управление запасами:</strong> Оптимизация уровней запасов для снижения избыточных расходов.
+                </li>
+                <li><strong>Обработка возвратов:</strong> Эффективная обработка возвратов и переработка товаров при
+                  необходимости.</li>
+                <li><strong>Технологическая поддержка:</strong> Доступ к современным системам управления заказами и
+                  отслеживания поставок.
+                </li>
+              </ol>
+              <p>
+                Эти услуги фулфилмента позволяют вам сконцентрироваться на развитии вашего бизнеса, а не на операционных
+                деталях.
+              </p>
+            </div>
+            <div class="lg:float-right w-100">
+              <img src="processing.jpg" class="rounded-lg object-cover" />
+            </div>
+          </div>
+
+          <div class="w-full justify-center flex scroll-my-32 mb-10" id="prices">
+            <div class="w-[400px] h-[400px] bg-sky-200 block">test </div>
+          </div>
+
+          <form id="contact-us" class="scroll-my-32">
+            <div class="grid md:grid-cols-3 md:gap-6">
+              <div class="relative z-0 w-full mb-6 group">
+                <input type="text" name="floating_first_name" id="floating_first_name" class="
+                  block py-2.5 px-0 w-full text-sm text-gray-900 
+                  bg-transparent border-0 border-b-2 border-gray-300 
+                  appearance-none dark:text-white dark:border-gray-600 
+                  dark:focus:border-blue-500 focus:outline-none focus:ring-0 
+                  focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm 
+                  text-gray-500 dark:text-gray-400 duration-300 transform 
+                  -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 
+                  peer-focus:text-blue-600 peer-focus:dark:text-blue-500 
+                  peer-placeholder-shown:scale-100 
+                  peer-placeholder-shown:translate-y-0 peer-focus:scale-75 
+                  peer-focus:-translate-y-6">Имя</label>
+              </div>
+              <div class="relative z-0 w-full mb-6 group">
+                <input type="text" name="floating_second_name" id="floating_second_name" class="
+                  block py-2.5 px-0 w-full text-sm text-gray-900 
+                  bg-transparent border-0 border-b-2 border-gray-300 
+                  appearance-none dark:text-white dark:border-gray-600 
+                  dark:focus:border-blue-500 focus:outline-none focus:ring-0 
+                  focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_second_name" class="peer-focus:font-medium absolute text-sm 
+                  text-gray-500 dark:text-gray-400 duration-300 transform 
+                  -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 
+                  peer-focus:text-blue-600 peer-focus:dark:text-blue-500 
+                  peer-placeholder-shown:scale-100 
+                  peer-placeholder-shown:translate-y-0 peer-focus:scale-75 
+                  peer-focus:-translate-y-6">Фамилия</label>
+              </div>
+              <div class="relative z-0 w-full mb-6 group">
+                <input type="text" name="floating_third_name" id="floating_third_name" class="
+                  block py-2.5 px-0 w-full text-sm text-gray-900 
+                  bg-transparent border-0 border-b-2 border-gray-300 
+                  appearance-none dark:text-white dark:border-gray-600 
+                  dark:focus:border-blue-500 focus:outline-none focus:ring-0 
+                  focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_third_name" class="peer-focus:font-medium absolute text-sm 
+                  text-gray-500 dark:text-gray-400 duration-300 transform 
+                  -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 
+                  peer-focus:text-blue-600 peer-focus:dark:text-blue-500 
+                  peer-placeholder-shown:scale-100 
+                  peer-placeholder-shown:translate-y-0 peer-focus:scale-75 
+                  peer-focus:-translate-y-6">Отчество</label>
+              </div>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+              <input type="text" name="floating_email" id="floating_email" class="
+                  block py-2.5 px-0 w-full text-sm text-gray-900 
+                  bg-transparent border-0 border-b-2 border-gray-300 
+                  appearance-none dark:text-white dark:border-gray-600 
+                  dark:focus:border-blue-500 focus:outline-none focus:ring-0 
+                  focus:border-blue-600 peer" placeholder=" " required />
+              <label for="floating_email" class="peer-focus:font-medium absolute text-sm 
+                  text-gray-500 dark:text-gray-400 duration-300 transform 
+                  -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 
+                  peer-focus:text-blue-600 peer-focus:dark:text-blue-500 
+                  peer-placeholder-shown:scale-100 
+                  peer-placeholder-shown:translate-y-0 peer-focus:scale-75 
+                  peer-focus:-translate-y-6">Email</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+              <input type="text" name="floating_telegram" id="floating_telegram" class="
+                  block py-2.5 px-0 w-full text-sm text-gray-900 
+                  bg-transparent border-0 border-b-2 border-gray-300 
+                  appearance-none dark:text-white dark:border-gray-600 
+                  dark:focus:border-blue-500 focus:outline-none focus:ring-0 
+                  focus:border-blue-600 peer" placeholder=" " required />
+              <label for="floating_telegram" class="peer-focus:font-medium absolute text-sm 
+                  text-gray-500 dark:text-gray-400 duration-300 transform 
+                  -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 
+                  peer-focus:text-blue-600 peer-focus:dark:text-blue-500 
+                  peer-placeholder-shown:scale-100 
+                  peer-placeholder-shown:translate-y-0 peer-focus:scale-75 
+                  peer-focus:-translate-y-6">Telegram</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+              <input type="text" name="floating_phone" id="floating_phone" class="
+                  block py-2.5 px-0 w-full text-sm text-gray-900 
+                  bg-transparent border-0 border-b-2 border-gray-300 
+                  appearance-none dark:text-white dark:border-gray-600 
+                  dark:focus:border-blue-500 focus:outline-none focus:ring-0 
+                  focus:border-blue-600 peer" placeholder=" " required />
+              <label for="floating_phone" class="peer-focus:font-medium absolute text-sm 
+                  text-gray-500 dark:text-gray-400 duration-300 transform 
+                  -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 
+                  peer-focus:text-blue-600 peer-focus:dark:text-blue-500 
+                  peer-placeholder-shown:scale-100 
+                  peer-placeholder-shown:translate-y-0 peer-focus:scale-75 
+                  peer-focus:-translate-y-6">Номер телефона</label>
+            </div>
+            <button type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="contacts" class="scroll-my-32 bg-red-100 bottom-0 absolute w-full">
+    <div class="h-32">
+      TEST
+    </div>
+
+  </footer>
+</body>
+
+</html>
